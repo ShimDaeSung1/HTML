@@ -1,12 +1,106 @@
-<!DOCTYPE html> --느낌표 누르고 탭
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML5</title>
+    <!-- 타이틀 아이콘 지정 -->
+    <link rel="icon" type="image/x-icon" href="/img/html.ico">
 </head>
 <body>
-    <h1>Hellow World</h1>Hellow World
+    <!-- 헤딩, 제목 -->
+    <h1>HTML5</h1>
+    <!-- 문단 나누기 -->
+    <p>HTML5는 웹표준 마크업언어입니다.</p>
+    <p>HTML5는 W3C에서 표준을 지정합니다.</p>
+    <!-- 두껍게, 볼드 -->
+    <b>HTML5</b> 
+    <!-- 이탤리체 -->
+    <i>HTML5</i>
+    <!-- 스트롱은 시맨틱태그, 강조 시 사용, 중요하다는 의미 -->
+    <strong>HTML5</strong>
+    <!-- emphasis, 중요의미, 즉 시맨틱태그(symantic tag) -->
+    <em>HTML5</em>
+    <!-- 색칠 -->
+    <mark>HTML5</mark>
+    <ins>HTML5</ins>
+    <!-- 취소선 -->
+    <del>HTML5</del>
+    <!-- 문단 지정 -->
+    <blockquote>
+        For nearly 60 years, WWF has been protecting
+        the future of nature. The world's leading conservation organization,
+        WWF works in 100 countries and is supported by
+        more than one million members in the United States and
+        close to five million globally.
+    </blockquote>
+    <!-- 큰따옴표 -->
+    <q></q>
+    <!-- 커서 갖다대면 설명 나옴 -->
+    <abbr title="World Health Organization">WHO</abbr>
+    <!-- symantic tag -->
+    <address>서울시 영등포구 당산동</address>
+    <cite>HTML5</cite>
+    <!-- href = hypertext references , 링크로 만들기 -->
+    <a href = "http://www.naver.com">네이버</a>
+    <!-- 새 창으로 열기 _blank -->
+    <a href = "http://www.google.com"target = "_blank">구글</a>
+
+    <a href = "/about/history.html">회사연혁</a>
+    <a href = "./about/history.html">회사연혁</a>
+    <a href = "about/history.html">회사연혁</a>
+
+    <!-- 이미지 업로드, alt는 이미지가 출력 안 될 경우 표시할 문장 -->
+    <img src = "/img/pic01.jpg" width="400" height="200" alt = "html5">
+
+    <!-- 테이블(행열) -->
+    <!-- 좌로 정렬, 위아래는 가운데정렬이 기본 -->
+    <table border ="1" width ="500" height = "500">
+        <!-- 첫 번째 행 -->
+        <tr>
+            <!-- 첫 번째 행의 각 열 -->
+            <!-- align은 좌우 정렬 -->
+            <!-- valing은 위아래 정렬 -->
+            <td align = "center">1</td> 
+            <td valign = "top">2</td>
+            <td>3</td>
+        </tr>
+        <!-- 두 번째 행 -->
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <!-- 세 번째 행 -->
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+    </ul>
+    <ol>
+        <li>html5</li>
+        <li>css3</li>
+        <li>javascript</li>
+    </ol>
+    <!-- br은 엔터키와 같다 -->
+    안녕하세요?<br><br><br>
+
+    줄이 바뀔까요?<br>
+
+    이렇게 하면?
+    <!-- div는 줄이 바뀜 -->
+    <div style = "background-color: aqua;">html5</div>
+    html5
+    <span style ="background-color: red;">html5</span>
+    Test
+    <iframe width="889" height="500" src="https://www.youtube.com/embed/SK6Sm2Ki9tI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <a href = "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=java">네이버에서 자바검색</a>
 </body>
 </html>
