@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS</title>
+    <style>
+        /* padding은 안쪽여백, margin은 바깥쪽 여백 */
+        *{padding: 0; margin: 0;}
+
+        /* body{
+            background-color:gray;
+            background-image:url("img/bg.jpg");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+        } */
+        body{
+            background: gray url("img/bg.jpg") no-repeat right top fixed;
+        }
+        
+        h1{color:blue; font-size : 30px;}
+        p{color:blue;text-align:center;}
+        #para1{color:orange;}
+        .center{text-align: center; font-size: 90px;}
+        p.center{text-align : center; font-size :10px;}
+        div, span{color:darkred; font-size: 50px;}
+        div i{color:aqua; font-size: 50px;}
+        div>i{color:chartreuse; font-size : 70px;}
+        div+p{color:blueviolet; font-size: 90px;}
+        div~b{color:#8f3868; font-size:70px;}
+        /* important는 최우선으로 적용 */
+        div{color:blue !important;}
+    </style>
+</head>
+<body>
+    <h1 style = "color : red;font-size: 60px;">CSS3</h1>
+    <h1>CSS3</h1>
+    <h1>CSS3</h1>
+    <p>CSS is Cascading Style Sheets</p>
+    <p>CSS is lauguage for style </p>
+    <p id="para1">CSS3</p>
+    <h1 class="center">CSS3</h1>
+    <h3 class="center">CSS3</h3>
+    <p class="center">CSS3</p>
+    <div>CSS3</div>
+    <span>CSS3</span>
+    <div>
+        <i>CSS3</i>
+        <p>
+            <i>
+                CSS3
+            </i>
+        </p>
+    </div>
+    <i>CSS3</i>
+    <div>
+        <div>
+            <p>
+                <i>CSS3</i>
+            </p>
+        </div>
+    </div>
+    <div>
+        <p>CSS3</p>
+    </div>
+    <p>CSS3</p>
+    <p>CSS3</p>
+    <div>
+        <p>CSS3</p>
+    </div>
+    <b>CSS3</b>
+    <b>CSS3</b>
+    <em style="color:rgb(65, 52, 184)">CSS3</em>
+    <em style="color:rgba(65, 52, 184, 0.5)">CSS3</em>
+</body>
+</html>
+<!-- 1. Element(Tag) Selector
+h1{color:red;} 처럼 태그(h1)가 오는 것
+
+2. id Selector
+#para1{color:red;}
+<p id = "para1">CSS3</p>
+처럼 id를 지정해서 위 # 뒤에 (style 사이) id로 나타내서 컬러, 정렬 등 지정
+=> id명은 중복되지 않게 사용
+
+3. class Selector
+.center{text-align:center;}
+p.center{text-align:center;} - p태그의 class가 center인 것만 적용
+<h1 class = "center">CSS</h1>
+<p class = "center">CSS3</p>
+처럼 class를 지정해서 위 .뒤에 (style 사이) class로 나타내서 컬러, 정렬 등 지정
+=> class명은 중복사용 가능
+
+4. universal Selector
+*{padding:0; margin:0}
+=> 모든 엘리먼트에 적용
+
+5. grouping selector
+div, span, .center{color:green;}
+=> 열거한 선택자에 모두 적용
+
+6. descendant selector
+div i{color:red;}
+=> 자손태그 모두에 적용
+---6번까지가 기초
+
+7. child selector
+div>i{color:blue;}
+=>자식태그 모두에 적용, 손자에게는 미적용
+
+8. sibling selector
+div + i{color:red;}
+=>같은레벨의 태그(sibling tag)중 바로 다음 것에만 적용
+
+9. general sibling selector
+div~b{color:red;}
+=> 같은레벨의 태그(sibling tag)전부 적용 -->
