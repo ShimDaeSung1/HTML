@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- 구글에 cdjns치고 들어가면 여러가지 쓸 수 있음 -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        @font-face{
+            font-family: BMDOHYEON;
+            src : url(img/BMDOHYEON_ttf.ttf);
+        }
+        h1{
+            font-family : BMDOHYEON;
+        }
+        .fas{font-size: 50px !important; color : red;}
+
+        /* a{text-decoration: none; color : #1856dd} */
+        a:link, a:visited, div {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            width : 300px;
+            /* 인라인블록은 줄이 안 바뀜 */
+            display: inline-block;
+        }
+        /* mouse over link 마우스가 올라가 있을 때 */
+        /* a:hover {color: hotpink; background-color: aqua;} */
+      
+        a:hover, a:active, div:hover{background-color: red;}
+
+        /* unvisited link
+        a:link {
+        color: #1856dd;
+        }
+
+        /* visited link 
+        a:visited {
+        color: #1856dd;
+        } */ 
+
+        /* selected link 누를 때
+        a:active {
+        color: #1856dd;
+        } */
+        table{
+            border-collapse:collapse;
+        }
+        #table1{
+            border-collapse: collapse; 
+            width: 100%;
+        }
+        #table1 th, #table1 td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <!-- 아이콘 -->
+    <h1>CSS3 - 캐스케이딩 스타일 시트</h1>
+    <i class="fas fa-cloud"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-car"></i>
+    <i class="fas fa-file"></i>
+    <i class="fas fa-bars"></i>
+    <br>
+    <a href="index.html">Home</a>
+    <a href="css.html">CSS3</a>
+    <div style = "cursor: pointer;">CSS3</div>
+    <table width = "100%" id = "table1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <br>
+    <table width = "50%" border="1px" height="300px">
+        <tr>
+            <td style = "text-align: center; font-weight: bold;">1</td>
+            <th>2</th>
+        </tr>
+        <tr>
+            <td valign = "top">3</td>
+            <td style="vertical-align: top;">4</td>
+        </tr>
+    </table>
+    <br>
+    <table width = "50%" height="300px" border = "1px">
+        <tr>
+            <td colspan="2">1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <br>
+    <table width = "50%" height="300px" border = "1px">
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <br>
+    <table border = "1px" width = "50%" height="500px">
+        <tr>
+            <td colspan="2">1</td>
+        </tr>
+        <tr>
+            <td width = "30%" height = "300px">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="2">7</td>
+        </tr>
+    </table>
+
+</body>
+</html>
