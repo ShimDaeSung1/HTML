@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout04</title>
+    <style>
+        *{padding:0; margin:0;}
+        body{background : #4C320D;}
+        #wrap{
+            width:800px;
+            margin: auto;
+        }
+        #top{
+            background-image: url("img/top.jpg");
+            width: 800px;
+            height: 10px;
+        }
+        #header{
+            background-image: url(img/header.jpg);
+            width: 800px;
+            height: 100px;
+            box-sizing: border-box;
+            padding: 20px;
+        }  
+        #menu{
+            background-image: url(img/menu.jpg);
+            width: 800px;
+            height: 30px;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }       
+        #content{
+            background-image: url("img/content.jpg");
+            width: 800px;
+            height: 500px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #bottom{
+            background-image: url("img/bottom.jpg");
+            width: 800px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id ="top"></div>
+        <div id="header">
+            <h1>TIS.Edu</h1>
+        </div>
+        <div id="menu">
+            Home | About | History | Contact 
+        </div>
+        <div id="content">
+            <h3>TIS정보기술교육센터 소개</h3>
+        </div>
+        <div id="bottom"></div>
+    </div>
+</body>
+</html>
