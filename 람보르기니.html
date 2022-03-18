@@ -19,19 +19,21 @@
         img { border:0;}
         body { position:fixed;  width:100%; height:100%; background:#111;}
 
-        /* 배경동영상 */
+        /* 배경동영상
         .vid { width:100%; height:100%; position:fixed; top:-60px; left:0px; opacity:0.9; }
-        .vid video { width:100%; min-width:1600px; }
+        .vid video { width:100%; min-width:1600px; } */
 
         /*로고*/
-        h1 { position:fixed; top:40px; left:40px; z-index:10;}
-        h1 img { width:280px; height:auto;}
+        h1 { position:fixed; top:30px; left:10px; z-index:10;}
+        h1 img { width:280px; height:auto; opacity: 1;}
         header { width:700px;
             height:100%;
+            opacity: 0.5;
             position:fixed;
             top:0;
             left:-420px;
-            background:linear-gradient(-45deg,#e6fc55, #b9fb05, #97e031); 
+            /* background-color: white; */
+            background:linear-gradient(-45deg,#131312, #f3f0f0, #ffffff); 
             transform: skew(-40deg);    
         }
         /* 1depth */
@@ -42,10 +44,10 @@
             top : 150px;
             right:0;
         }
-        #gnb { 	width:220px; position:absolute; top:150px; right:0px;}
+        #gnb { 	width:220px; position:absolute; top:120px; right:0px;}
         #gnb>li {position:relative; }
-        #gnb>li>a { display:block; width:220px; height:50px; font:bold 18px/3 play; color:#222; box-sizing:border-box; padding-right:40px; text-align:right;}
-        #gnb>li.on>a{background-color:black;color:white;}
+        #gnb>li>a { display:block; width:220px; height:50px; font:bold 16px/3 play; color:#222; box-sizing:border-box; padding-right:40px; text-align:right;}
+        #gnb>li.on>a{background-color:rgb(0, 0, 0);color:white; }
         #gnb>li:hover>a{background-color: gray; color:black;}
         #gnb em {display:inline-block;  transform:skewX(40deg)!important; }
         #gnb i{margin-right: 10px;}
@@ -92,28 +94,69 @@
         #side .btnContents { width:150px; height:50px; position:absolute;  bottom:40px; left:100px; color:#b9fb05;	transform:skewX(40deg); }
         #side:hover .btnContents { left:700px;}	
         .btnContents i { font-size:60px; position:absolute; bottom:0px; right:0px; opacity:1;}
-        .btnContents i:nth-child(1) { animation:ani linear 1.5s 0s infinite;}
-        .btnContents i:nth-child(2) { animation:ani linear 1.5s 0.5s infinite;}
-        .btnContents i:nth-child(3) { animation:ani linear 1.5s 1.0s infinite;}
+        .btnContents i:nth-child(1) { animation:ani linear 1.5s 0s infinite; color: rgb(20, 20, 20);}
+        .btnContents i:nth-child(2) { animation:ani linear 1.5s 0.5s infinite; color: rgb(20, 20, 20);}
+        .btnContents i:nth-child(3) { animation:ani linear 1.5s 1.0s infinite; color:rgb(20, 20, 20)}
+        @keyframes ani {
+            0%{right:0px; transform: scale(1); opacity: 1; }
+            100%{right:100px; transform:scale(1.5);opacity: 0;}
+        }
+
+        * { box-sizing: border-box; }
+        .video-background {
+            background: #000;
+            position: fixed;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -99;
+        }
+        .video-foreground,
+        .video-background iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+            @media (min-aspect-ratio: 16/9) {
+            .video-foreground { height: 300%; top: -100%; }
+        }
+            @media (max-aspect-ratio: 16/9) {
+            .video-foreground { width: 300%; left: -100%; }
+        }
+
 
         @keyframes ani {
             0%{right:0px; transform: scale(1); opacity: 1;}
             100%{right:100px; transform:scale(1.5);opacity: 0;}
         }
+
+        
     </style>
 </head>
 <body>
     <!-- 동영상 --------------------------------------------------------------------------------------->
-    <figure class="vid">
+    <!-- <figure class="vid">
         <video loop autoplay muted>
-            <source src="/img/nike.mp4" type="video/mp4"/>
+            <source src="img/nike.mp4" type="video/mp4"/>
         </video>
-    </figure>
+    </figure> -->
     <!-- 동영상 -->
+  
+ 
+    <div class="video-background">
+
+        <div class="video-foreground">
     
+            <iframe src="https://www.youtube.com/embed/NLkeh1wG0us?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=NLkeh1wG0us" frameborder="0" allowfullscreen></iframe>
+    
+        </div>
+    
+      </div>
+
 
     <!-- 로고 --------------------------------------------------------------------------------------->
-	<h1><img src="img/logo2.png" /></h1>
+	<h1><img src="img/람보르기니.png" /></h1>
     <!-- 로그 -->
     
 	
@@ -121,7 +164,7 @@
 	<header>		
 		<ul id="gnb">
 			<li class="on">
-				<a href="#"><em><i class="fa fa-refresh fa-spin"></i>About NIKE</em></a>				
+				<a href="#"><em><i class="fa fa-refresh fa-spin"></i>About Lamborghini</em></a>				
 			</li>
 			<li>
 				<a href="#"><em>Brand Info</em></a>	
